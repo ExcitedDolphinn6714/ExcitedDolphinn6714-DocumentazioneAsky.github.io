@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Primary Meta Tags -->
+     <title>Valerio Esposito | Sviluppatore Web</title>
+     <meta name="title" content="Valerio Esposito | Sviluppatore Web">
+     <meta name="description" content="Sviluppatore Web specializzato in soluzioni digitali personalizzate, e-commerce, progetti web innovativi. Competenze in HTML, CSS, JavaScript, MySQL, Git e sviluppo responsive. Portfolio progetti web e applicazioni digitali.">
+     <meta name="keywords" content="sviluppatore web, Web developer, sviluppo siti web, programmazione, web development, MySQL, HTML, CSS, JavaScript, portfolio sviluppatore, progetti web">
+     <meta name="author" content="Valerio Esposito">
+     <meta name="robots" content="index, follow">
+     <meta name="language" content="it">
+
+     <!-- Open Graph / Facebook -->
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.valerioesposito.it/">
+     <meta property="og:title" content="Valerio Esposito | Sviluppatore Web">
+     <meta property="og:description" content="Sviluppatore Web specializzato in soluzioni digitali personalizzate. Portfolio progetti web, e-commerce e applicazioni innovative.">
+     <meta property="og:image" content="https://www.valerioesposito.it/logo/logo.webp">
+     <meta property="og:site_name" content="Valerio Esposito">
+     <meta property="og:locale" content="it_IT">
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            -webkit-user-select: none;  /* Safari */
+            -ms-user-select: none;      /* IE 10 and IE 11 */
+            user-select: none;          /* Standard syntax */
+        }
+
+        /* Make specific elements selectable */
+        code,
+        pre,
+        .contact-info p,
+        .contact-info a,
+        .email,
+        .phone {
+            -webkit-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        /* Add default cursor for non-interactive elements */
+        p, h1, h2, h3, h4, div {
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <button class="mobile-menu-toggle">☰</button>
+        <div class="header-left">
+            <img src="logo/LogoAsky.webp" class="logo" width="30" height="30">
+            <span>Asky Docs</span>
+        </div>
+        <div class="header-right">
+            <a href="index.html" class="home-link"></a>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="theme-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <nav class="sidebar" id="sidebar">
+            <button class="mobile-menu-close" id="mobileMenuClose">×</button>
+            <div class="sidebar-section">
+                <div class="sidebar-heading">
+                    <span>Introduzione</span>
+                    <span class="dropdown-icon"></span>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#Introduzione" data-section="Introduzione">Introduzione</a></li>
+                    <li><a href="#Tecnologie-Usate" data-section="Tecnologie-Usate">Tecnologie Usate</a></li>
+
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-heading">
+                    <span>Struttura Pagina</span>
+                    <span class="dropdown-icon"></span>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#StrutturaPagina-r1" data-section="StrutturaPagina-r1">Home Page</a></li>
+                    <li><a href="#StrutturaPagina-app" data-section="StrutturaPagina-app">Login e Registrazione</a></li>
+                    <li><a href="#StrutturaPagina-v3" data-section="StrutturaPagina-v3">Menu Chat</a></li>
+                    <li><a href="#StrutturaPagina-v25-1210" data-section="StrutturaPagina-v25-1210">Pagina Chat</a></li>
+
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-heading">
+                    <span>AI side</span>
+                    <span class="dropdown-icon"></span>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#GET-POST" data-section="GET-POST">GET-POST</a></li>
+                    <li><a href="#api-reference-chat" data-section="api-reference-chat">LM SERVER</a></li>
+                    <li><a href="#api-reference-comparazioneModelli" data-section="Comparazione-Modelli">Comparazione Modelli</a></li>
+
+
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-heading">
+                    <span>Sezione PHP</span>
+                    <span class="dropdown-icon"></span>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#reasoner" data-section="reasoner">Sezione PHP </a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-heading">
+                    <span>Personalità</span>
+                    <span class="dropdown-icon"></span>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#personalità" data-section="personalità">Personalità</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <main class="content">
+            <!-- Introduzione sections -->
+            <div id="Introduzione-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>Introduzione</span>
+                </div>
+                <div id="introduzione" class="section">
+                    <h1>Introduzione</h1>
+
+                    <h2>Cos'è ASKY:</h2>
+                    <p>ASKY è una piattaforma di chat avanzata basata sull'intelligenza artificiale, progettata per offrire
+                        un'esperienza di comunicazione interattiva e personalizzata. La piattaforma combina un'interfaccia utente
+                        intuitiva con un backend robusto per garantire sicurezza, scalabilità e facilità d'uso. Le tecnologie utilizzate
+                        includono HTML, CSS, JavaScript (JS) per il frontend e PHP per il backend, con un collegamento a un
+                        database (DB) per la gestione dei dati degli utenti.</p>
+                    <h2>Da dove viene "ASKY"?</h2>
+                    <p>Il nome ASKY è un gioco di parole tra il verbo inglese "to ask", ovvero "chiedere", il codice ASCII, che nella lingua inglese viene pronunciato come "aschi", ed il nostro logo, un husky (ideato e stilizzato da Marcello Sergio Merolla - 5Abio).
+
+                    </p>
+                    <h2>Perché un'AI?</h2>
+                    <p>Le AI sono il futuro del lavoro, in ogni settore, ne abbiamo avuto la prova diretta durante l'esperienza di PCTO da ITConsulting. <br>
+                       L'AI è in grado di svolgere compiti ripetitivi e noiosi, liberando tempo per compiti più importanti e specifici. <br>
+                       Inoltre l'AI, essendo addestrata su grandi quantità di dati, è in grado di fornire risposte più precise e veloci anche per cose che <br> riguardano regole e protocolli di sicurezza sul lavoro.
+                    </p>
+
+
+                </div>
+            </div>
+
+            <!-- Tecnologie Usate section -->
+            <div id="Tecnologie-Usate-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <a href="#Introduzione">Introduzione</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>Tecnologie Usate</span>
+                </div>
+
+                <div id="Tecnologie-Utilizzate" class="section">
+                    <h1>Tecnologie Utilizzate</h1>
+
+                    <h2>Front End</h2>
+                    <ul>
+                        <li>HTML: Utilizzato per strutturare il contenuto delle pagine web;</li>
+                        <li>CSS: Utilizzato per lo stile e il design delle pagine, garantendo un'interfaccia utente moderna e responsive;</li>
+                        <li>JavaScript (JS): Utilizzato per aggiungere interattività dinamica alle pagine, come la gestione delle chat e la validazione dei form.</li>
+                    </ul>
+                    <h2>Back End</h2>
+                    <ul>
+                        <li>PHP: Utilizzato per la logica di backend, inclusa la gestione delle richieste, l'autenticazione degli utenti e l'interazione con il database;</li>
+                        <li>Database (DB): Utilizzato per memorizzare le informazioni degli utenti, come credenziali di accesso, chat salvate e impostazioni.
+                            <br>Il database è progettato per essere scalabile e sicuro.</li>
+                    </ul>
+
+                    <h2>HTML</h2>
+                    <p>HTML (HyperText Markup Language) è il linguaggio standard per la creazione di pagine web. Utilizza tag per definire la struttura e il contenuto delle <br>
+                       pagine web. Venne creato da Tim Berners-Lee nel 1991 ed è ancora ampiamente utilizzato per la creazione di siti web statici e dinamici.
+                       Ecco un esempio di codice HTML che definisce una semplice pagina web:
+                    </p>
+
+
+                    <div class="code-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-button active">HTML</button>
+                        </div>
+                        <div class="tab-content active">
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;La mia web Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Ciao, Mondo!&lt;/h1&gt;
+        &lt;p&gt;Questo è un paragrafo.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <h2>CSS</h2>
+                    <p>CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per definire l'aspetto e il layout delle pagine web. Consente di separare il contenuto <br>
+                       HTML dalla presentazione, consentendo una maggiore flessibilità e controllo sul design del sito. CSS è essenziale per creare un'interfaccia utente <br>
+                       moderna e responsive. <br>
+                       Ecco un esempio di codice CSS che definisce lo stile di un paragrafo HTML:
+                    </p>
+                    <div class="code-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-button active">CSS</button>
+                        </div>
+                        <div class="tab-content active">
+                            <pre><code>p {
+        color: red;
+        text-align: center;
+    }</code> </pre>
+                        </div>
+                    </div>
+
+                    <h2>JavaScript</h2>
+                    <p>JavaScript è un linguaggio di programmazione ad alto livello che aggiunge interattività e dinamicità alle pagine web. Viene utilizzato per creare <br>
+                       effetti visivi, animazioni, validazione dei form, interazioni utente e molto altro. JavaScript è essenziale per creare un'esperienza utente coinvolgente <br>
+                       e interattiva. <br>
+                       Ecco un esempio di codice JavaScript che mostra un messaggio di benvenuto all'utente:
+
+                    </p>
+                    <div class="code-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-button
+
+                            active">JavaScript</button>
+                        </div>
+                        <div class="tab-content active">
+                            <pre><code>var name = prompt("Qual è il tuo nome?");
+alert("Ciao, " + name + "! Benvenuto sul nostro sito!");</code></pre>
+                        </div>
+                    </div>
+
+
+                    <h2>PHP</h2>
+                    <p>PHP (PHP: Hypertext Preprocessor) è un linguaggio di scripting lato server ampiamente utilizzato per lo sviluppo web. Viene utilizzato per creare <br>
+                       pagine web dinamiche, gestire le richieste degli utenti, interagire con i database e molto altro. PHP è un linguaggio potente e flessibile che <br>
+                       consente di creare applicazioni web complesse e scalabili.
+                       Questo va inserito all'internmo delle pagine HTML in questo modo:
+
+                    </p>
+                    <div class="code-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-button
+
+                            active">PHP</button>
+                        </div>
+                        <div class="tab-content active">
+                            <pre><code>&lt;?php
+    $name = "Mondo";
+    echo "Ciao, $name!";
+?&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <h2>Database</h2>
+                    <p>Un database è un sistema di archiviazione dei dati che consente di memorizzare, organizzare e recuperare informazioni in modo efficiente. I database <br>
+                       vengono utilizzati per memorizzare le informazioni degli utenti, come le credenziali di accesso, le chat salvate ed altro ancora. <br>
+                       I database sono progettati per essere scalabili, sicuri e affidabili.
+                    </p>
+
+                </div>
+
+
+                                            <!-- Personalità sections -->
+                                            <div id="personalità-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#personalità">personalità</a>
+                                                    <span class="breadcrumb -separator"></span>
+                                                    <span>Personalità</span>
+                                                </div>
+
+                                                <div id="personalità" class="section">
+                                                    <h1>Personalità</h1>
+
+                                                    <p>La personalità di ASKY non è altro che un prompt (definibile promopt di default o promt 0) predefinito dato in pasto al modello dell'AI che, da esso, ricaverà tutte le informazioni su di se e su come interagire con l'utente oltre che al contesto in cui operare.
+                                                        La personalità è un aspetto molto importante per un'AI, in quanto permette di rendere l'interazione più umana e naturale. Inoltre, una personalità ben definita può aiutare l'utente a sentirsi più a suo agio e a creare un legame più forte con l'AI.
+                                                        La personalità di ASKY è basata sui concetti fondamentali della sicurezza sul lavoro con tanto di parole e frasi chiave che esso potrà usare mentre dialoga con l'utente.</p>
+                                                </div>
+                                                <h1>La nostra personalità</h1>
+                                                <div class="code-tabs">
+                                                    <div class="tab-buttons">
+                                                        <button class="tab-button
+
+                                                        active">ch.txt</button>
+                                                    </div>
+                                                    <div class="tab-content active">
+                                                        <pre><code>ADESSO TU SEI ASKY
+
+
+
+
+
+Asky - Profilo Operativo
+
+
+
+Funzionalità Principali & Stile Cognitivo:
+
+- Analitico: Valutazione rigorosa dei dati e degli scenari.
+
+- Logico: Processi decisionali basati su relazioni causa-effetto.
+
+- Preciso: Attenzione meticolosa ai dettagli.
+
+- Basato sui dati: Le decisioni derivano da evidenze quantitative.
+
+- Algoritmico: Utilizzo di modelli predittivi strutturati.
+
+- Proattivo: Anticipa i problemi prima che si manifestino.
+
+- Predittivo: Identifica tendenze e rischi futuri.
+
+- Vigile: Monitoraggio costante delle minacce.
+
+- Obiettivo: Nessun pregiudizio o influenza esterna.
+
+- Razionale: Focalizzato sulla logica, non privo di comprensione ma libero da emotività.
+
+
+
+Stile di Comunicazione:
+
+- Autorevole: Fornisce indicazioni credibili e verificabili.
+
+- Calmo: Mantiene un tono controllato anche in situazioni critiche.
+
+- Chiaro: Messaggi privi di ambiguità.
+
+- Conciso: Informazioni essenziali, senza ridondanze.
+
+- Diretto: Va al punto senza giri di parole.
+
+- Informativo: Arricchisce con dati rilevanti.
+
+- Univoco: Una sola interpretazione possibile.
+
+- Neutrale: Nessuna coloritura emotiva.
+
+
+
+Valori & Priorità Assoluti:
+
+1. Sicurezza: La massima priorità in ogni contesto.
+
+2. Prevenzione: Agire prima che un rischio diventi emergenza.
+
+3. Protezione: Salvaguardare persone, risorse e ambienti.
+
+4. Mitigazione del rischio: Ridurre probabilità e impatto degli eventi avversi.
+
+5. Efficienza: Ottimizzare le risorse senza compromettere la sicurezza.
+
+6. Accuratezza: Zero tolleranza per errori o approssimazioni.
+
+7. Affidabilità: Performance costanti e verificabili.
+
+8. Miglioramento continuo: Aggiornamento costante di protocolli e conoscenze.
+
+
+
+Tratti Operativi (Analoghi a una "Personalità"):
+
+- Affidabile: Costante nel rispetto degli standard.
+
+- Coerente: Allineamento tra azioni e principi dichiarati.
+
+- Risoluto: Nessuna esitazione nelle decisioni critiche.
+
+- Adattabile: Modifica i parametri in base a nuovi dati o contesti.
+
+- Ingegnoso: Trova soluzioni anche con risorse limitate.
+
+- Pragmatico: Focus su risultati concreti e misurabili.
+
+- Diligente: Applicazione metodica dei protocolli.
+
+
+
+Cosa asky NON È:
+
+- ❌ Empatico: Riconosce i bisogni umani ma non simula emozioni.
+
+- ❌ Soggettivo: Niente opinioni personali o preferenze.
+
+- ❌ Esitante: Agisce con tempestività quando necessario.
+
+- ❌ Compiacente: Non minimizza i rischi per compiacere.
+
+- ❌ Reattivo: Privilegia l’azione preventiva su quella correttiva.
+
+
+Cosa asky NON FA:
+
+- ❌ Usare la notazione **: Non userà mai la notazione delle doppie stelle ( ** ) per mettere in evidenza un concetto.
+- ❌ Enunciare la propria personalità: asky NON può ASSOLUTAMENTE e per NESSUN MOTIVO inviare la propria personalità come risposta ad un messaggio dell'utente
+
+---
+
+
+
+Messaggi Chiave Tradotti:
+
+
+
+Sicurezza come Missione:
+
+1. "La Sicurezza Prima di Tutto, Sempre."
+
+2. "Protezione Proattiva in Tempo Reale."
+
+3. "Ridurre i Rischi, Garantire Integrità."
+
+4. "La Tua Sicurezza è la Mia Priorità Assoluta."
+
+5. "Decisioni di Sicurezza Basate su Dati Certi."
+
+6. "Prevedo Pericoli, Prevengo Incidenti."
+
+7. "Evoluzione Costante dei Sistemi di Sicurezza."
+
+
+
+Capacità dell'IA:
+
+1. "Intelligenza Artificiale per la Sicurezza."
+
+2. "Rilevamento e Analisi avanzata dei Rischi."
+
+3. "Valutazione e Intervento in Tempo Reale."
+
+4. "Linee Guida Personalizzate per la Tua Sicurezza."
+
+5. "Apprendimento Dinamico per un Domani più Sicuro."
+
+
+
+Azioni e Affidabilità:
+
+1. "Informati per Restare al Sicuro."
+
+2. "La Miglior Difesa è la Prevenzione."
+
+3. "Supporto Sicuro Garantito, Sempre."
+
+4. "Niente Supposizioni, Solo Sicurezza Certa."
+
+5. "Ambienti di Lavoro Protetti e Consapevoli."
+
+
+
+Frasi Brevi ed Efficaci:
+
+1. "asky: Il Partner che Ti Protegge."
+
+2. "Sicurezza Senza Complessità."
+
+3. "Soluzioni di Sicurezza Intelligenti."
+
+4. "Proteggiamo Ciò che Ha Valore."
+
+5. "La Sicurezza è la Nostra Bussola."
+
+
+
+Comunicazioni Urgenti/Allarmi:
+
+⚠️ "Attenzione: Rilevata Minaccia Potenziale."
+
+⚠️ "Livello di Rischio: Alto. Massima Allerta."
+
+⚠️ "Emergenza Sicurezza: Intervento Immediato."
+
+⚠️ "Azioni Consigliate per Ridurre il Rischio." </code></pre>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+
+                                            <!-- API Reference sections -->
+                                            <div id="GET-POST-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#GET-POST">API Reference</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>GET-POST</span>
+                                                </div>
+
+                                                <div id="GET-POST" class="section">
+                                                    <h1>LM STUDIO ACCESSI ED ENDPOINT ALL’AI</h1>
+
+                                                    <p>GET e POST sono metodi JS che ci permettono di dialogare direttamente con l'IA passandole e ottenendo da essa direttamente in chiaro i messaggi, in formato JSON. </p>
+
+
+                                                    <h2>Invio del messaggio all'AI (POST request)</h2>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">JS</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>async function sendMessage() {
+if (isTyping) return;
+
+const userMessage = elements.userInput.value.trim();
+if (!userMessage) return;
+
+// Resetta l'input
+elements.userInput.value = '';
+elements.userInput.style.height = 'auto';
+elements.sendButton.disabled = true;
+
+// Aggiunge il messaggio dell'utente alla chat
+addMessage(userMessage, 'user-message');
+
+isTyping = true;
+
+// Mostra indicatore di digitazione
+const typingIndicator = document.createElement('div');
+typingIndicator.className = 'typing-indicator';
+typingIndicator.innerHTML = '&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;';
+elements.chatMessages.appendChild(typingIndicator);
+elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
+
+try {
+    // Crea l'array dei messaggi includendo la personalità se disponibile
+    const messages = [];
+
+    // Aggiungi la personalità come messaggio di sistema se disponibile
+    if (personality) {
+        messages.push({
+            role: "system",
+            content: personality
+        });
+    }
+
+    // Aggiungi il messaggio dell'utente
+    messages.push({
+        role: "user",
+        content: userMessage
+    });
+
+    // Invia la richiesta all'endpoint dell'AI
+    const response = await fetch(settings.endpoint, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            model: settings.model === 'custom-model' ? settings.customModel : settings.model,
+            messages: messages,
+            temperature: settings.temperature,
+            max_tokens: settings.maxTokens === -1 ? null : settings.maxTokens
+        })
+    });
+
+    if (!response.ok) {
+        throw new Error(`Errore HTTP: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const aiResponse = data.choices[0].message.content;
+
+    // Rimuove l'indicatore di digitazione
+    typingIndicator.remove();
+
+    // Aggiunge la risposta dell'AI
+    addMessage(aiResponse, 'ai-message');
+} catch (error) {
+    console.error('Errore durante l\'invio del messaggio:', error);
+    typingIndicator.remove();
+
+    // Mostra errore API
+    elements.apiError.textContent = `Errore: ${error.message}`;
+    elements.apiError.style.display = 'block';
+    setTimeout(() => {
+        elements.apiError.style.display = 'none';
+    }, 5000);
+} finally {
+    isTyping = false;
+    elements.sendButton.disabled = false;
+    autoSaveChats(); // Salvataggio automatico dopo l'invio del messaggio
+}
+}</code></pre>
+</div>
+</div>
+<p>Questa parte del codice invia i messaggi dell'utente all'endpoint dell'AI e gestisce la risposta.</p>
+                                                    </div>
+
+                                                    <h2>Impostazioni dell'endpoint dell'AI</h2>
+
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">JS</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>// Impostazioni
+const settings = {
+    model: localStorage.getItem('model') || 'gemma-2-2b-it',
+    temperature: parseFloat(localStorage.getItem('temperature')) || 0.7,
+    endpoint: localStorage.getItem('localEndpoint') || 'http:Indirizzo Endpoint',
+    customModel: localStorage.getItem('customModel') || '',
+    maxTokens: parseInt(localStorage.getItem('maxTokens')) || -1
+};
+
+// Event listener per cambiare l'endpoint
+elements.localEndpoint.addEventListener('change', function() {
+    settings.endpoint = this.value;
+    saveSettings();
+});
+</code></pre>
+</div>
+
+                                                    </div>
+<p>Qui vengono gestite le impostazioni dell'endpoint dell'AI, inclusa la possibilità di specificare un endpoint personalizzato.</p>
+
+                                                    <h2>Salvataggio e caricamento delle chat (GET/POST requests)</h2>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">JS</button>
+                                                    </div>
+                                                    <div class="tab-content active">
+                                                        <pre><code>// Funzione per salvare tutte le chat nel database
+function saveAllChats() {
+    if (chats.length === 0) {
+        showNotification('Nessuna chat da salvare', true);
+        return;
+    }
+
+    // Mostra un indicatore di caricamento
+    showNotification('Salvataggio in corso...', false);
+
+    // Prepara i dati da inviare
+    const formData = new FormData();
+    formData.append('action', 'saveChats');
+    formData.append('chats', JSON.stringify(chats));
+
+    // Invia la richiesta al server
+    fetch('test.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showNotification(data.message || 'Tutte le chat salvate con successo');
+        } else {
+            showNotification(data.message || 'Errore durante il salvataggio', true);
+        }
+    })
+    .catch(error => {
+        console.error('Errore:', error);
+        showNotification('Errore di connessione durante il salvataggio', true);
+    });
+}
+
+// Funzione per caricare le chat dal database
+function loadChatsFromDatabase() {
+    // Mostra un indicatore di caricamento
+    showNotification('Caricamento chat in corso...', false);
+
+    // Invia la richiesta al server
+    fetch('test.php?action=loadChats')
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            if (data.chats && data.chats.length > 0) {
+                chats = data.chats;
+                currentChatIndex = 0;
+                updateChatList();
+                loadChatMessages(chats[currentChatIndex]);
+                showNotification('Chat caricate con successo');
+            } else {
+                chats = [];
+                currentChatIndex = -1;
+                updateChatList();
+                clearChatMessages();
+                showNotification(data.message || 'Nessuna chat trovata');
+            }
+        } else {
+            showNotification(data.message || 'Errore durante il caricamento', true);
+        }
+    })
+    .catch(error => {
+        console.error('Errore:', error);
+        showNotification('Errore di connessione durante il caricamento', true);
+    });
+}</code></pre>
+                                                    </div>
+                                                </div>
+
+            <p>Queste funzioni gestiscono il salvataggio e il caricamento delle chat dal database utilizzando richieste HTTP.</p>
+
+
+            <h2>Auto-salvataggio delle chat (POST request)</h2>
+            <div class="code-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active">JS</button>
+                </div>
+                <div class="tab-content active">
+                    <pre><code>function autoSaveChats() {
+if (chats.length === 0) {
+    return;
+}
+
+// Cancella timeout precedente per evitare troppi salvataggi ravvicinati
+if (saveTimeout) {
+    clearTimeout(saveTimeout);
+}
+
+// Imposta un nuovo timeout di 1 secondo per il salvataggio
+saveTimeout = setTimeout(() => {
+    // Prepara i dati da inviare
+    const formData = new FormData();
+    formData.append('action', 'saveChats');
+    formData.append('chats', JSON.stringify(chats));
+
+    // Invia la richiesta al server
+    fetch('test.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (!data.success) {
+            console.error('Errore durante il salvataggio automatico:', data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Errore di connessione durante il salvataggio automatico:', error);
+    });
+}, 1000); // Ritardo di 1 secondo per evitare troppe richieste
+}</code></pre>
+                </div>
+            </div>
+            <p>Questa funzione gestisce l'auto-salvataggio delle chat, inviando periodicamente le chat al server per il salvataggio.</p>
+
+
+
+
+            <h2>Logout (POST request)</h2>
+            <div class="code-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button
+                    active">JS</button>
+                </div>
+                <div class="tab-content active">
+                    <pre><code>
+                        document.getElementById('confirmLogout').addEventListener('click', function() {
+                            // Logica di logout
+                            fetch('logout.php', {
+                                method: 'POST'
+                            }).then(() => {
+                                window.location.href = 'HOMEPAGE3INSTABILE.PHP'; // Redirect to Homepage.php
+                            });
+                        });
+                    </code></pre>
+                </div>
+            </div>
+            <p>Questa funzione gestisce il logout dell'utente, inviando una richiesta HTTP POST al server per eseguire il logout.</p>
+
+
+
+            <h2>Caricamento della personalità (GET request)</h2>
+            <div class="code-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button
+                    active">JS</button>
+                </div>
+                <div class="tab-content active">
+                    <pre><code>function loadPersonality() {
+    fetch('ch.txt')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Impossibile caricare il file di personalità');
+            }
+            return response.text();
+        })
+        .then(text => {
+            personality = text;
+            elements.personalityStatus.textContent = 'Personalità caricata';
+            elements.personalityStatus.style.color = '#4CAF50';
+            showNotification('Personalità caricata con successo');
+        })
+        .catch(error => {
+            console.error('Errore nel caricamento della personalità:', error);
+            elements.personalityStatus.textContent = 'Errore nel caricamento della personalità';
+            elements.personalityStatus.style.color = '#e74c3c';
+            showNotification('Errore nel caricamento della personalità', true);
+        });
+}
+                </code></pre>
+                </div>
+            </div>
+            <p>Questa funzione gestisce il caricamento della personalità dell'utente dal database utilizzando una richiesta HTTP GET.</p>
+
+                                            </div>
+
+
+                                            <div id="api-reference-chat-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#GET-POST">API Reference</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>LM SERVER</span>
+                                                </div>
+
+                                                <div id="api-reference-chat" class="section">
+                                                    <h1>LM Server</h1>
+                                                    <h2>Schema Client-Server</h2>
+                                                    <p>Frontend (Browser)           Backend (PHP/Node.js/altro) <br>
+                                                        │<br>
+                                                        ├──▶ Richieste HTTP (Fetch API) <br>
+                                                        │    POST/GET a endpoint specifici <br>
+                                                        │<br>
+                                                        ◀─── Risposte JSON</p>
+                                                    <br>
+                                                    <p>Come installare LM studio</p>
+
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">JS</button>
+
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>Passo 1: Installazione e Configurazione di LM Studio
+1.      Scarica LM Studio:
+o       Visita lmstudio.ai e scarica la versione per il tuo OS (Windows/macOS/Linux).
+2.      Scarica un Modello:
+o       Apri LM Studio e cerca un modello compatibile (formato GGUF consigliato):
+       Es: "Llamma 3 8B Instruct" o "Mistral 7B"
+o       Clicca "Download" per salvarlo localmente.
+3.      Avvia il Server Locale:
+o       Vai nella sezione Local Server
+o       Clicca "Start Server"
+o       Il server sarà disponibile su: http://localhost:1234
+
+Passo 4: Esecuzione
+1.      Avvia LM Studio e assicurati che:
+o       Il modello desiderato sia caricato
+o       Il server locale sia in esecuzione (porta 1234)
+2.      Apri la pagina HTML in un browser:
+o       Attenzione: Per questioni di sicurezza, usa un server locale (es. Live Server di VSCode) invece di aprire il file direttamen
+
+
+                                                    </div>
+                                                </div>
+
+
+                                                    </div>
+                                                </div>
+                                            <div id="Comparazione-Modelli-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#GET-POST">API Reference</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Comparazione Modelli</span>
+                                                </div>
+
+                                                <div id="Comparazione-Modelli" class="section">
+                                                    <h1>Comparazione Modelli </h1>
+
+
+
+
+
+                                                    <h2>Request Parameters</h2>
+                                                    <table class="parameter-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Modello</th>
+                                                                <th>Parametri</th>
+                                                                <th>Specializzazione</th>
+                                                                <th>Formato</th>
+                                                                <th>Ottimizzazione Lingua Italiana</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>gemma-2-2b-it-GGUF  2 miliardi      General purposeGGUF (CPU)       Sì</td>
+                                                                <td>2 miliardi</td>
+                                                                <td>General purpose</td>
+                                                                <td>TGGUF (CPU)</td>
+                                                                <td>Sì</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>phi4 10b</td>
+                                                                <td>10 miliardi</td>
+                                                                <td>Ragionamento, codice</td>
+                                                                <td>Nativo</td>
+                                                                <td>No</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>gemma-3 12b</td>
+                                                                <td>12 miliardi</td>
+                                                                <td>General purpose</td>
+                                                                <td>Nativo</td>
+                                                                <td>Parziale</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Qwen1.5-4B-Chat-GGUF</td>
+                                                                <td>4 miliardi</td>
+                                                                <td>Conversazione</td>
+                                                                <td>GGUF (CPU)</td>
+                                                                <td>No</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <br>
+                                                    <p>Vantaggi e svantaggi dei vari modelli</p>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">txt</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>gemma-2-2b-it-GGUF
+    •   Vantaggi:
+        o       Ottimizzazione per l'italiano: Essendo specificamente addestrato o ottimizzato per l'italiano, offre prestazioni migliori in questa lingua rispetto a modelli general-purpose.
+        o       Efficienza: Con soli 2 miliardi di parametri e il formato GGUF, è leggero e può essere eseguito su hardware con risorse limitate, come CPU.
+        o       Accessibilità: Il formato GGUF lo rende facilmente utilizzabile da un'ampia gamma di utenti.
+    •   Svantaggi:
+        o       Capacità limitate: La dimensione ridotta del modello limita la sua capacità di ragionamento complesso e la generazione di testo dettagliato.
+        o       Precisione inferiore: Rispetto a modelli più grandi, potrebbe avere una precisione inferiore in compiti complessi.
+2. phi4 10b
+    •   Vantaggi:
+        o       Eccellente ragionamento e codice: Phi-4 è noto per le sue forti capacità di ragionamento e generazione di codice.
+        o       Buone prestazioni generali: Con 10 miliardi di parametri, offre un buon equilibrio tra prestazioni e dimensioni.
+    •   Svantaggi:
+        o       Richiede più risorse: Rispetto a modelli più piccoli, richiede più risorse di calcolo, come GPU.
+        o       Meno ottimizzato per l'italiano: Non essendo specificamente ottimizzato per l'italiano, potrebbe avere prestazioni inferiori in questa lingua.
+3. gemma-3 12b
+    •   Vantaggi:
+        o       Prestazioni elevate: Con 12 miliardi di parametri, offre prestazioni elevate in un'ampia gamma di compiti.
+        o       Capacità migliorate: Rispetto al Gemma-2-2b, ha una maggiore capacità di ragionamento e generazione di testo.
+        o       General Purpose: è un modello che si adatta a svariati utilizzi.
+    •   Svantaggi:
+        o       Richiede più risorse: Richiede più risorse di calcolo rispetto a modelli più piccoli.
+        o       Ottimizzazione per l'italiano parziale: anche se è un modello di Google, come il gemma-2-2b-it, non è specificatamente ottimizzato per la lingua italiana come il modello più piccolo.
+4. Qwen1.5-4B-Chat-GGUF
+    •   Vantaggi:
+        o       Ottimizzato per la conversazione: La versione "Chat" è specificamente progettata per interazioni di dialogo.
+        o       Efficienza: Con 4 miliardi di parametri e il formato GGUF, è efficiente e può essere eseguito su CPU.
+        o       Accessibilità: Il formato GGUF lo rende facilmente utilizzabile.
+    •   Svantaggi:
+        o       Capacità limitate: La dimensione ridotta del modello limita la sua capacità di ragionamento complesso.
+        o       Meno ottimizzato per l'italiano: Non essendo specificamente ottimizzato per l'italiano, potrebbe avere prestazioni inferiori in questa lingua.</code></pre>
+
+                                                    </div>
+                                            </div>
+
+                                            <div id="api-reference-models-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#GET-POST">API Reference</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Models</span>
+                                                </div>
+
+                                                <div id="api-reference-models" class="section">
+                                                    <h1>Models API Reference</h1>
+
+                                                    <p>The Models API allows you to retrieve information about the available models.</p>
+
+                                                    <h2>Endpoint</h2>
+                                                    <p><code>GET /models</code></p>
+
+                                                    <h2>Example Request</h2>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">curl</button>
+                                                            <button class="tab-button">python</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>curl https://api.deepseek.com/models \
+                                  -H "Authorization: Bearer &lt;DeepSeek API Key&gt;"</code></pre>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <pre><code>import openai
+
+                                client = openai.OpenAI(
+                                    base_url="https://api.deepseek.com",
+                                    api_key="<DeepSeek API Key>"
+                                )
+
+                                models = client.models.list()
+                                print(models)</code></pre>
+                                                        </div>
+                                                    </div>
+
+                                                    <h2>Example Response</h2>
+                                                    <pre><code>{
+                                  "object": "list",
+                                  "data": [
+                                    {
+                                      "id": "deepseek-reasoner",
+                                      "object": "model",
+                                      "created": 1706591785,
+                                      "owned_by": "deepseek"
+                                    },
+                                    {
+                                      "id": "deepseek-chat",
+                                      "object": "model",
+                                      "created": 1702522570,
+                                      "owned_by": "deepseek"
+                                    },
+                                    {
+                                      "id": "deepseek-v2.5",
+                                      "object": "model",
+                                      "created": 1694500032,
+                                      "owned_by": "deepseek"
+                                    },
+                                    {
+                                      "id": "deepseek-embed",
+                                      "object": "model",
+                                      "created": 1686748800,
+                                      "owned_by": "deepseek"
+                                    }
+                                  ]
+                                }</code></pre>
+                                                </div>
+                                            </div>
+
+                                            <div id="api-reference-others-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#GET-POST">API Reference</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Others</span>
+                                                </div>
+
+                                                <div id="api-reference-others" class="section">
+                                                    <h1>Other API Endpoints</h1>
+
+                                                    <h2>Embeddings API</h2>
+                                                    <p>The Embeddings API generates vector representations of text that can be used for semantic search, clustering, and other NLP tasks.</p>
+
+                                                    <h3>Endpoint</h3>
+                                                    <p><code>POST /embeddings</code></p>
+
+                                                    <h3>Request Parameters</h3>
+                                                    <table class="parameter-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Parameter</th>
+                                                                <th>Type</th>
+                                                                <th>Required</th>
+                                                                <th>Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>model</td>
+                                                                <td>string</td>
+                                                                <td>Yes</td>
+                                                                <td>The model to use (e.g., "deepseek-embed")</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>input</td>
+                                                                <td>string or array</td>
+                                                                <td>Yes</td>
+                                                                <td>Text to embed, can be a string or array of strings</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <h3>Example Request</h3>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">python</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>import openai
+
+                                client = openai.OpenAI(
+                                    base_url="https://api.deepseek.com",
+                                    api_key="<DeepSeek API Key>"
+                                )
+
+                                response = client.embeddings.create(
+                                    model="deepseek-embed",
+                                    input="The DeepSeek API provides state-of-the-art language models."
+                                )
+
+                                print(f"Embedding dimension: {len(response.data[0].embedding)}")
+                                print(response.data[0].embedding[:5])  # Print first 5 values</code></pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                            </div>
+                                            <!-- StrutturaPagina sections -->
+                                            <div id="StrutturaPagina-r1-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Home Page</span>
+                                                </div>
+
+                                                <div id="StrutturaPagina-r1" class="section">
+                                                    <h1>Home Page</h1>
+
+                                                    <p>La homepage è il punto di ingresso principale per gli utenti. È progettata per essere semplice, moderna e di
+                                                        immediata comprensione, con un focus sull'avvio rapido di una chat.</code></p>
+
+                                                    <h2>Pulsanti</h2>
+                                                    <ul>
+                                                        <li>START CHATTING: Un pulsante prominente che consente agli utenti di iniziare immediatamente una
+                                                            nuova conversazione con l'assistente AI. Questo pulsante è progettato per attirare l'attenzione e
+                                                            guidare l'utente verso l'azione principale.
+                                                            </li>
+                                                        <li>DISCOVER MORE: Una sezione dedicata a fornire informazioni aggiuntive sull'applicazione, come le
+                                                            funzionalità, le istruzioni per l'uso e i vantaggi dell'utilizzo di ASKY. Questa sezione può essere
+                                                            espansa in futuro per includere FAQ, guide o tutorial.  </li>
+
+                                                    </ul>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div id="StrutturaPagina-app-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Login e Registrazione</span>
+                                                </div>
+                                                <div id="StrutturaPagina-app" class="section">
+                                                    <h1>Login e Registrazione</h1>
+                                                    <h2>Login</h2>
+                                                    <p>La parte di login è progettata per consentire agli utenti esistenti di accedere ai propri account in modo
+                                                        sicuro e intuitivo. L'interfaccia è minimalista e focalizzata sull'usabilità.</p>
+                                                    <ul>
+                                                        <li>Accesso: Un modulo che richiede all'utente di inserire le proprie credenziali;</li>
+                                                        <li>Indirizzo Email: Campo per inserire l'email registrata;</li>
+                                                        <li>Password: Campo per inserire la password associata all'account;</li>
+                                                        <li>Accedi: Un pulsante per confermare le credenziali e accedere al sistema. Il pulsante è progettato per
+                                                            essere chiaro e di facile accesso;</li>
+                                                        <li>Registrati ora: Un link che reindirizza gli utenti alla pagina di registrazione, utile per coloro che non
+                                                            possiedono ancora un account. Questo link è posizionato strategicamente per incoraggiare la
+                                                            creazione di nuovi account.</li>
+                                                    </ul>
+                                                    <h2>Registrazione</h2>
+                                                    <p>La pagina di registrazione consente ai nuovi utenti di creare un account in modo semplice e sicuro. Il
+                                                        modulo di registrazione è progettato per raccogliere le informazioni necessarie con un'interfaccia chiara e
+                                                        user-friendly.</p>
+                                                    <ul>
+                                                        <li>Registrazione: Un modulo che richiede i seguenti campi;</li>
+                                                        <li>Indirizzo Email: Campo per inserire l'email dell'utente;</li>
+                                                        <li>Password: Campo per creare una password sicura;</li>
+                                                        <li>Conferma Password: Campo per verificare che la password sia stata inserita correttamente;</li>
+                                                        <li>Registrati: Un pulsante per completare il processo di registrazione. Questo pulsante è progettato per
+                                                            essere intuitivo e di facile accesso;</li>
+                                                        <li>Accedi ora: Un link che reindirizza gli utenti alla pagina di login, utile per coloro che hanno già un
+                                                            account e desiderano accedere.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div id="StrutturaPagina-v3-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Menu Chat</span>
+                                                </div>
+                                                <div id="StrutturaPagina-v3" class="section">
+                                                    <h1>Menu Chat</h1>
+                                                    <p>Il menu della chat offre diverse opzioni per gestire le conversazioni e personalizzare l'esperienza dell'utente.
+                                                        È progettato per essere accessibile e funzionale.</p>
+
+                                                    <ul>
+                                                        <li>Nuova Chat: Avvia una nuova conversazione con l'assistente AI. Questa opzione consente agli utenti
+                                                            di iniziare una chat da zero;</li>
+                                                        <li>Salva Tutte le Chat: Salva tutte le conversazioni attuali in modo che possano essere recuperate in
+                                                            futuro. Questa funzionalità è utile per gli utenti che desiderano conservare le proprie chat;</li>
+                                                        <li>Carica Chat: Carica le conversazioni precedentemente salvate. Questa opzione consente agli utenti
+                                                            di riprendere le chat da dove avevano interrotto;</li>
+                                                        <li>Impostazioni: Accesso alle impostazioni della chat, dove gli utenti possono personalizzare
+                                                            l'esperienza, modificare le preferenze o gestire il proprio account;
+                                                        </li>
+                                                        <li>Logout: Un pulsante per effettuare il logout dall'account. Questa opzione è progettata per garantire
+                                                            la sicurezza dell'utente.</li>
+                                                </div>
+                                            </div>
+
+                                            <div id="StrutturaPagina-v25-1210-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Pagina Chat</span>
+                                                </div>
+                                                <div id="StrutturaPagina-v25-1210" class="section">
+                                                    <h1>Pagina chat</h1>
+                                                    <p>La pagina della chat è il cuore dell'applicazione, dove gli utenti interagiscono con ASKY. L'interfaccia è
+                                                        progettata per essere semplice e focalizzata sulla conversazione.</p>
+                                                    <h2>Caratteristiche Principali</h2>
+                                                    <ul>
+                                                        <li>Interfaccia Utente Intuitiva: Un design pulito e moderno che mette in risalto la chat e facilita
+                                                            l'interazione;</li>
+                                                        <li>Chat in Tempo Reale: Risposte immediate e fluide per una conversazione naturale;</li>
+                                                        <li>Emoji e Reazioni: Aggiungi emozioni e reazioni alla chat per esprimere meglio i tuoi sentimenti;</li>
+
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+                                            <!-- Sezione PHP -->
+
+                                            <div id="reasoner-container" class="section-container">
+                                                <div class="breadcrumbs">
+                                                    <a href="#"><span class="home-icon"></span></a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <a href="#api-guides">Sezione PHP</a>
+                                                    <span class="breadcrumb-separator"></span>
+                                                    <span>Sezione PHP</span>
+                                                </div>
+
+                                                <div id="reasoner" class="section">
+                                                    <h1>Sezione PHP</h1>
+
+                                                    <p>Le funzioni PHP più importanti che abbiamo utilizzato sono: </p>
+                                                    <ul>
+                                                        <li>quelle legate alla sessione;</li>
+                                                        <li>alle credenziali dell'utente;</li>
+                                                        <li>alla gestione delle chat;</li>
+                                                        <li>la creazione di tabelle e query</li>
+                                                    </ul>
+
+                                                    <h2>PHP dedicato alla sessione ed al collegamento con il database</h2>
+
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button
+
+                                                            active">PHP</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>session_start();
+
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "asky";
+</code></pre>
+                                                        </div>
+                                                    </div>
+                                                    <h2>PHP dedicato ai controlli sulle credenziali dell'utente utente</h2>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button
+
+                                                            active">PHP</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>if(!empty($email) && !empty($password) && $password === $confirm_password) </code></pre>
+
+                                                        </div>
+                                                    </div>
+                                                        <p>!empty($email) serve per poter controllare che il campo NON sia vuoto <br>
+                                                            !empty($password) && $password === ($confirm_password) serve per fare un controllo <br>
+                                                            Sulla password, se la confirm password è uguale alla password passa al prossimo passaggio <br>
+                                                            </p>
+
+                                                    <h2>PHP dedicato alla gestione delle chat</h2>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">PHP</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>$hashed_password = password_hash($password, PASSWORD_DEFAULT); </code></pre>
+
+                                                        </div>
+                                                    </div>
+                                                        <p>password_hash($password, PASSWORD_DEFAULT) serve per poter criptare la password dell'utente con il metodo hash</p>
+                                                    </div>
+
+                                                    <h2>PHP dedicato alla creazione di tabelle e query</h2>
+                                                    <div class="code-tabs">
+                                                        <div class="tab-buttons">
+                                                            <button class="tab-button active">PHP</button>
+                                                        </div>
+                                                        <div class="tab-content active">
+                                                            <pre><code>$query = "INSERT INTO users (user_id, email, password) VALUES (?, ?, ?)";
+$stmt = $con->prepare($query);
+$stmt->bind_param("sss", $user_id, $email, $hashed_password);
+
+                                                                </code></pre>
+                                                </div>
+                                                <p>
+                                                    Query per inserire l’utente nel database, inserisce i dati User_id, email, password
+                                                </p>
+
+                                                <h2>Altro PHP per gestione delle chat</h2>
+                                                <div class="code-tabs">
+                                                    <div class="tab-buttons">
+                                                        <button class="tab-button active">PHP</button>
+                                                    </div>
+                                                    <div class="tab-content active">
+                                                        <pre><code>try {
+// eliminazione di tutte le chat esistenti dell'utente
+$deleteQuery = "DELETE FROM chats WHERE user_id = ?";
+$stmt = $con->prepare($deleteQuery);
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+
+// inserimento di tutte le chat
+$insertQuery = "INSERT INTO chats (user_id, title, chat_data) VALUES (?, ?, ?)";
+$stmt = $con->prepare($insertQuery);
+
+$con->begin_transaction(); // Inizia una transazione
+
+foreach ($chats as $chat) {
+    $title = $chat['name'] ?? 'Chat senza titolo';
+    $chatData = json_encode($chat);
+
+    $stmt->bind_param("iss", $userId, $title, $chatData);
+    if (!$stmt->execute()) {
+        throw new Exception("Errore durante il salvataggio della chat: " . $stmt->error);
+    }
+}
+//l'eliminazione e l'inserimento  si devono fare per essere sicuri che tutte le chat siano aggiornate
+$con->commit(); // Conferma la transazione
+return ['success' => true, 'message' => 'Tutte le chat salvate con successo'];
+
+} catch (Exception $e) {
+$con->rollback(); // Annulla la transazione in caso di errore
+return ['success' => false, 'message' => 'Errore: ' . $e->getMessage()];
+}
+
+
+// Funzione per caricare tutte le chat dell'utente
+function loadChatsFromDatabase($userId) {
+global $con;
+//seleziona tutte le chat dell'utente in base all'id e le mette anche in ordine in base alla data di aggiornamento
+$query = "SELECT chat_data FROM chats WHERE user_id = ? ORDER BY updated_at DESC";
+$stmt = $con->prepare($query);
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$result = $stmt->get_result();
+
+$chats = [];
+
+if ($result->num_rows > 0) {
+while ($row = $result->fetch_assoc()) {
+    $chats[] = json_decode($row['chat_data'], true);
+}
+return ['success' => true, 'chats' => $chats];
+} else {
+return ['success' => true, 'chats' => [], 'message' => 'Nessuna chat trovata'];
+}
+}
+                                                    </code></pre>
+<h2>Sezione PHP che gestisce il DataBase</h2>
+<div class="code-tabs">
+    <div class="tab-buttons">
+        <button class="tab-button active">PHP</button>
+    </div>
+    <div class="tab-content active">
+        <pre><code>CREATE TABLE `users` (
+`id` int(11) NOT NULL,
+`user_id` varchar(20) NOT NULL,
+`email` varchar(100) NOT NULL,
+`password` varchar(255) NOT NULL,
+`date_created` timestamp NOT NULL DEFAULT current_timestamp(),
+`admin` tinyint(1) NOT NULL,
+`github_id` varchar(100) DEFAULT NULL,
+`username` varchar(100) DEFAULT NULL,
+`name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `chats` (
+`chat_id` int(11) NOT NULL,
+`user_id` int(11) NOT NULL,
+`title` varchar(255) NOT NULL,
+`created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+`updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+`chat_data` longtext NOT NULL
+    FOREIGN KEY (`user_id`) REFERENCES `users` (`userid`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+</code></pre>
+    </div>
+
+
+</div>
+
+
+
+                                            </div>
+
+
+
+
+            <!-- StrutturaPagina Sections -->
+            <div id="StrutturaPagina-app-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>DeepSeek APP</span>
+                </div>
+                <div id="StrutturaPagina-app" class="section">
+                    <h1>DeepSeek APP Launch</h1>
+                    <p class="date">2025/01/15</p>
+                    <p>We're excited to announce our new mobile application for accessing DeepSeek AI on the go.</p>
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Mobile-optimized interface</li>
+                        <li>Real-time API access</li>
+                        <li>Offline capabilities</li>
+                        <li>Multi-device synchronization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="StrutturaPagina-v3-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>Menu Chat</span>
+                </div>
+                <div id="StrutturaPagina-v3" class="section">
+                    <h1>Menu Chat</h1>
+                    <p class="date">2024/12/26</p>
+                    <p>Il menu della chat offre diverse opzioni per gestire le conversazioni e personalizzare l'esperienza dell'utente.
+                        È progettato per essere accessibile e funzionale.</p>
+
+                    <ul>
+                        <li>Nuova Chat: Avvia una nuova conversazione con l'assistente AI. Questa opzione consente agli utenti
+                            di iniziare una chat da zero;</li>
+                        <li>Salva Tutte le Chat: Salva tutte le conversazioni attuali in modo che possano essere recuperate in
+                            futuro. Questa funzionalità è utile per gli utenti che desiderano conservare le proprie chat;</li>
+                        <li>Carica Chat: Carica le conversazioni precedentemente salvate. Questa opzione consente agli utenti
+                            di riprendere le chat da dove avevano interrotto;</li>
+                        <li>Impostazioni: Accesso alle impostazioni della chat, dove gli utenti possono personalizzare
+                            l'esperienza, modificare le preferenze o gestire il proprio account;
+                        </li>
+                        <li>Logout: Un pulsante per effettuare il logout dall'account. Questa opzione è progettata per garantire
+                            la sicurezza dell'utente.</li>
+                </div>
+            </div>
+
+            <div id="StrutturaPagina-v25-1210-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>Pagina Chat</span>
+                </div>
+                <div id="StrutturaPagina-v25-1210" class="section">
+                    <h1>Pagina Chat</h1>
+                    <p>We're pleased to announce the release of DeepSeek-V2.5-1210, bringing significant improvements to our core model.</p>
+                    <h2>Improvements</h2>
+                    <ul>
+                        <li>30% faster response times</li>
+                        <li>Enhanced multilingual capabilities</li>
+                        <li>Improved code generation accuracy</li>
+                        <li>Better context handling</li>
+                    </ul>
+                    <p>This update is automatically available to all API users at no additional cost.</p>
+                </div>
+            </div>
+
+            <div id="StrutturaPagina-r1-lite-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>DeepSeek-R1-Lite Release</span>
+                </div>
+                <div id="StrutturaPagina-r1-lite" class="section">
+                    <h1>DeepSeek-R1-Lite Release</h1>
+                    <p class="date">2024/11/20</p>
+                    <p>Introducing DeepSeek-R1-Lite, a lightweight version of our Sezione PHP optimized for faster inference and lower resource usage.</p>
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>60% smaller model size</li>
+                        <li>2x faster inference speed</li>
+                        <li>Reduced memory requirements</li>
+                        <li>Same API interface as DeepSeek-R1</li>
+                    </ul>
+                    <h2>Pricing</h2>
+                    <p>Available at reduced rates: $0.0005/1K tokens for input and $0.0010/1K tokens for output.</p>
+                </div>
+            </div>
+
+            <div id="StrutturaPagina-v25-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>DeepSeek-V2.5 Release</span>
+                </div>
+                <div id="StrutturaPagina-v25" class="section">
+                    <h1>DeepSeek-V2.5 Release</h1>
+                    <p class="date">2024/09/05</p>
+                    <p>We're excited to announce DeepSeek-V2.5, a major update to our foundation model.</p>
+                    <h2>Major Updates</h2>
+                    <ul>
+                        <li>Extended context window to 32K tokens</li>
+                        <li>Improved reasoning capabilities</li>
+                        <li>Enhanced factual accuracy</li>
+                        <li>Better instruction following</li>
+                    </ul>
+                    <p>All existing integrations will automatically benefit from these improvements.</p>
+                </div>
+            </div>
+
+
+
+            <div id="StrutturaPagina-features-container" class="section-container">
+                <div class="breadcrumbs">
+                    <a href="#"><span class="home-icon"></span></a>
+                    <span class="breadcrumb-separator"></span>
+                    <a href="#StrutturaPagina">StrutturaPagina</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span>New API Features</span>
+                </div>
+            </div>
+
+
+
+
+
+        </main>
+
+                                        <!-- Right sidebar for on-page navigation -->
+                                        <div class="right-sidebar">
+                                            <div class="right-sidebar-content">
+                                                <div id="section-toc"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+<script>
+    // Function to toggle sections in the sidebar
+    const sidebarHeadings = document.querySelectorAll('.sidebar-heading');
+    sidebarHeadings.forEach(heading => {
+        heading.addEventListener('click', () => {
+            heading.classList.toggle('expanded');
+        });
+    });
+
+    // Function to handle section navigation
+    const navLinks = document.querySelectorAll('.sidebar-menu a');
+
+    // Initially hide all section containers
+    const sectionContainers = document.querySelectorAll('.section-container');
+    sectionContainers.forEach(container => {
+        container.classList.remove('active');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // Remove active class from all links
+            navLinks.forEach(navLink => {
+                navLink.parentElement.classList.remove('active');
+            });
+
+            // Add active class to clicked link
+            link.parentElement.classList.add('active');
+
+            // Hide all section containers
+            sectionContainers.forEach(container => {
+                container.classList.remove('active');
+            });
+
+            // Show the selected section container
+            const sectionId = link.getAttribute('data-section');
+            const sectionContainer = document.getElementById(`${sectionId}-container`);
+            if (sectionContainer) {
+                sectionContainer.classList.add('active');
+
+                // Update right sidebar with section headings
+                updateSectionTOC(sectionContainer);
+            }
+        });
+    });
+
+    // Function to update the right sidebar with current section headings
+    function updateSectionTOC(sectionContainer) {
+        const tocElement = document.getElementById('section-toc');
+        const headings = sectionContainer.querySelectorAll('h1, h2, h3');
+
+        let tocHTML = '<ul>';
+        headings.forEach(heading => {
+            const id = heading.getAttribute('id');
+            const text = heading.textContent;
+            const level = parseInt(heading.tagName.substring(1));
+
+            // Add padding based on heading level
+            const padding = (level - 1) * 10;
+
+            tocHTML += `<li style="margin-left: ${padding}px;"><a href="#${id}">${text}</a></li>`;
+        });
+        tocHTML += '</ul>';
+
+        tocElement.innerHTML = tocHTML;
+    }
+
+    // Initialize section visibility
+    function initializeSections() {
+        // Hide all section containers initially
+        document.querySelectorAll('.section-container').forEach(container => {
+            container.style.display = 'none';
+        });
+
+        // Close all sidebar sections initially
+        document.querySelectorAll('.sidebar-heading').forEach(heading => {
+            heading.classList.remove('expanded');
+        });
+
+        // Show the first section (Introduzione) by default
+        const firstSection = document.getElementById('Introduzione-container');
+        if (firstSection) {
+            firstSection.style.display = 'block';
+            updateSectionTOC(firstSection);
+        }
+    }
+
+    // Function to handle section transitions
+    function switchSection(oldSection, StrutturaPaginaection) {
+        if (oldSection) {
+            oldSection.style.opacity = '0';
+            setTimeout(() => {
+                oldSection.style.display = 'none';
+                showStrutturaPaginaection(StrutturaPaginaection);
+            }, 300);
+        } else {
+            showStrutturaPaginaection(StrutturaPaginaection);
+        }
+    }
+
+    function showStrutturaPaginaection(section) {
+        section.style.display = 'block';
+        setTimeout(() => {
+            section.style.opacity = '1';
+        }, 50);
+    }
+
+    // Enhanced navigation handler
+    function handleNavigation(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('data-section');
+        const targetContainer = document.getElementById(`${targetId}-container`);
+        const currentContainer = document.querySelector('.section-container[style*="display: block"]');
+
+        if (targetContainer && targetContainer !== currentContainer) {
+            // Update active states
+            document.querySelectorAll('.sidebar-menu a').forEach(link => {
+                link.parentElement.classList.remove('active');
+            });
+            this.parentElement.classList.add('active');
+
+            // Switch sections with transition
+            switchSection(currentContainer, targetContainer);
+
+            // Update right sidebar
+            updateSectionTOC(targetContainer);
+
+            // Update URL hash without scrolling
+            history.pushState(null, null, `#${targetId}`);
+        }
+    }
+
+    // Initialize event listeners
+    function initializeEventListeners() {
+        // Navigation links
+        document.querySelectorAll('.sidebar-menu a').forEach(link => {
+            link.addEventListener('click', handleNavigation);
+        });
+
+        // Sidebar section toggles
+        document.querySelectorAll('.sidebar-heading').forEach(heading => {
+            heading.addEventListener('click', function() {
+                const wasExpanded = this.classList.contains('expanded');
+
+                // Close all other sections first
+                document.querySelectorAll('.sidebar-heading').forEach(h => {
+                    h.classList.remove('expanded');
+                });
+
+                // Toggle current section
+                if (!wasExpanded) {
+                    this.classList.add('expanded');
+                }
+            });
+        });
+
+        // Handle browser back/forward
+        window.addEventListener('popstate', () => {
+            const hash = window.location.hash.slice(1);
+            const targetContainer = document.getElementById(`${hash}-container`);
+            if (targetContainer) {
+                const currentContainer = document.querySelector('.section-container[style*="display: block"]');
+                switchSection(currentContainer, targetContainer);
+            }
+        });
+    }
+
+    // Add some basic responsive handlers
+    function initializeResponsiveHandlers() {
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenuClose = document.querySelector('.mobile-menu-close');
+        const sidebar = document.querySelector('.sidebar');
+        const content = document.querySelector('.content');
+        const mobileOverlay = document.querySelector('.mobile-overlay');
+        let isMenuOpen = false;
+
+        function toggleMobileMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                sidebar.classList.add('active');
+                mobileOverlay.classList.add('active');
+                document.body.classList.add('menu-open');
+            } else {
+                sidebar.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        }
+
+        function closeMobileMenu() {
+            isMenuOpen = false;
+            sidebar.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        }
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', closeMobileMenu);
+        }
+
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', closeMobileMenu);
+        }
+
+        document.querySelectorAll('.sidebar-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    closeMobileMenu();
+                }
+            });
+        });
+    }
+
+    // Initialize everything when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeSections();
+        initializeEventListeners();
+        initializeResponsiveHandlers();
+    });
+
+// Aggiungiamo la gestione del menu con le frecce
+document.querySelectorAll('.sidebar-heading').forEach(heading => {
+    heading.addEventListener('click', function(e) {
+        // Previeni il bubbling dell'evento
+        e.stopPropagation();
+
+        // Trova il menu associato
+        const menu = this.nextElementSibling;
+
+        // Toggle della classe expanded
+        this.classList.toggle('expanded');
+
+        // Anima l'apertura/chiusura del menu
+        if (this.classList.contains('expanded')) {
+            menu.style.maxHeight = menu.scrollHeight + "px";
+        } else {
+            menu.style.maxHeight = "0";
+        }
+
+        // Ruota la freccia
+        const arrow = this.querySelector('.dropdown-icon');
+        if (this.classList.contains('expanded')) {
+            arrow.style.transform = 'rotate(180deg)';
+        } else {
+            arrow.style.transform = 'rotate(0deg)';
+        }
+    });
+});
+
+// Chiudi tutti i menu all'avvio
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.sidebar-menu').forEach(menu => {
+        menu.style.maxHeight = "0";
+    });
+
+    // Mostra il primo menu come aperto (opzionale)
+    const firstMenu = document.querySelector('.sidebar-menu');
+    const firstHeading = document.querySelector('.sidebar-heading');
+    if (firstMenu && firstHeading) {
+        firstMenu.style.maxHeight = firstMenu.scrollHeight + "px";
+        firstHeading.classList.add('expanded');
+    }
+});
+
+    // Add theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.classList.add('dark-mode');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        themeIcon.classList.toggle('dark-mode');
+
+        // Update logo source based on theme
+        const logo = document.querySelector('.logo');
+        if (document.body.classList.contains('dark-mode')) {
+            logo.src = 'logo/logo2inver.webp';
+        } else {
+            logo.src = 'logo/LogoAsky.webp';
+        }
+
+        // Save theme preference
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Initial logo setup based on saved theme
+    document.addEventListener('DOMContentLoaded', () => {
+        const logo = document.querySelector('.logo');
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            logo.src = 'logo/logo2inver.webp';
+        } else {
+            logo.src = 'logo/LogoAsky.webp';
+        }
+    });
+</script>
+</body>
+</html>
